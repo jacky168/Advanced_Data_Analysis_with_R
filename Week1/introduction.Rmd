@@ -3,6 +3,8 @@ title: "Introduction to R and RStudio"
 author: "Chien-Liang Liu"
 date: "August 22, 2016"
 output: beamer_presentation
+fig_width: 6
+fig_height: 4
 ---
 
 ## Data Scientist: The Sexiest Job of the 21st Century
@@ -11,6 +13,10 @@ output: beamer_presentation
 
 Source: https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century/
 
+```{r global_options, include=FALSE}
+knitr::opts_chunk$set(fig.width=12, fig.height=8, fig.path='images/',
+                      echo=FALSE, warning=FALSE, message=FALSE)
+```
 
 ## Data Science Venn Diagram
 
@@ -104,20 +110,59 @@ Source : New York Times
 R & RStudio
 
 ## What's R
+- R is a scripting language for statistical data manipulation and analysis
+- It was inspired by, and is mostly compatible with, the statistical language S developed by AT&T
+- R has become more popular than S/S-Plus, both because it’s free and because more people are contributing to it
 
 
 ## Why R?
+- a public-domain implementation of the widely-regarded S statistical language; R/S is the de facto standard among professional statisticians
+- comparable, and often superior, in power to commercial products in most senses
+- available for Windows, Macs, Linux
+- in addition to enabling statistical operations, it’s a general programming language, so that you can automate your analyses and create new functions
+- object-oriented and functional programming structure
+- open-software nature means it’s easy to get help from the user community, and lots of new functions get contributed by users, many of which are prominent statisticians
+
+## R and functional programming
+R has many functional programming features. Roughly speaking, these allow one to apply the same function to all elements of a vector, or all rows or columns of a matrix or data frame, in a single operation. The advantages are important:
+
+- Clearer, more compact code
+- Potentially much faster execution speed
+- Less debugging (since you write less code)
+- Easier transition to parallel programming
 
 ## Visualization
+R has provided a basic plotting envirorment for you.
 
 ```{r, echo=FALSE}
 plot(cars)
 ```
 
+## ggplot2
+But, ggplot2 is a more powerful visualization package in R.
+
+```{r}
+library(ggplot2)
+ggplot(data=cars, aes(x=speed, y=dist)) + geom_point()
+```
+
 
 ## R Installation
+You can download R from https://cran.r-project.org/ according to your OS.
+
+![alt text](./images/download_R.png "CRAN screenshot")
+
+
 
 ## RStudio
+You can download RStudio from https://www.rstudio.com/products/rstudio/download2/.
+
+![alt text](./images/download_Rstudio.png "RStudio")
+
+## Customize your RStudio
+You can customize RStudio according to your own requirements. For example, you can change the code appearance, panel layout, and background color.
+
+
 
 ## Howework 0
 - Install R & RStudio
