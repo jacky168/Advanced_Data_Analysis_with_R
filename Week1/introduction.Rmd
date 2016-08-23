@@ -162,11 +162,57 @@ You can download RStudio from https://www.rstudio.com/products/rstudio/download2
 ## Customize your RStudio
 You can customize RStudio according to your own requirements. For example, you can change the code appearance, panel layout, and background color.
 
+##R Markdown
+R Markdown provides an authoring framework for data science. You can use a single R Markdown file to both
 
+- save and execute code
+- generate high quality reports that can be shared with an audience
+
+R Markdown documents are fully reproducible and support dozens of static and dynamic output formats.
+
+## 1-minute Introduction Video
+
+1-minute video: https://vimeo.com/178485416
+
+## Simple Demo from RStudio
+
+1-example.Rmd
+
+
+## git and github
+- git is a source code version control system, which a series of "commits" or snapshots of your code. You make the commits manually
+- gitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere
+
+
+## Create a Repository on the github site
+- The first step is to create a github account
+- Then, you can create a new repository
+
+![alt text](./images/github_new_repository.png "New repository")
+
+
+## How to get help in R?
+- use ? or help to find the document for a function 
+- Search stackoverflow.com
+- Google it
+- Ask your colleagues
+
+## Example
+The following stackoverflow page provides detailed information about getting help in R.
+
+[stackoverflow page](http://stackoverflow.com/questions/15289995/how-to-get-help-in-r)
+
+
+## R Markdown/git/github
+
+- Detailed introduction to R Markdown/git/github will be presented in the future
+- But you still can start to use these tools by yourselves
+- rmarkdown-cheatsheet-2.0.pdf and rmarkdown-reference.pdf are availaboe for your reference
 
 ## Howework 0
 - Install R & RStudio
 - Customize your own RStudio environment and try to be familiar with it
+- Create a github account, and create a new repository ``hello-world''. Send your repository URL to TAs
 - Start coding
 
 
